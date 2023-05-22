@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #505050;
+}
+
+.insert,
+.edit {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 2rem; /* Adjust this value as desired */
+  position: relative;
+  max-width: 60vw;
+  padding: 20px;
+  background-color: #636e72;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.421);
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #ccc;
+}
+
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button,
+.form-group #Back {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group #Back {
+  margin-top: 0.2rem;
+  background-color: #af4c4c;
+}
+
+.form-group button:hover,
+.form-group #Back:hover {
+  background-color: #45a049;
+}
+
+.form-group #Back:hover {
+  background-color: #863939;
+}

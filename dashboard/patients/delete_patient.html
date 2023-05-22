@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/forms.css" />
+    <title>Insert Client</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="insert">
+      <div class="container">
+        <h2>Medical System Management - Delete Client</h2>
+        <form action="delete_patient.php" method="POST">
+          <div class="form-group">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required />
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Delete Client</button>
+            <button id="Back" onclick="goBack()">Go Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../../src/patients.js"></script>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

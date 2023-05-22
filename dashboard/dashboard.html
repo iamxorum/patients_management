@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/dashboard.css" />
+    <title>Document</title>
+    <style>
+      .log-out-button {
+        position: fixed;
+        top: 0.5rem;
+        left: 0.5rem;
+        padding: 1rem;
+        width: 10vw;
+        background-color: #af4c4c;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .log-out -button:hover {
+        background-color: #863939;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="log-out-button" onclick="logOut()">Log Out</button>
+      <h2>Medical System Management - Dashboard</h2>
+
+      <nav>
+        <ul>
+          <li>
+            <h3>Patients</h3>
+            <ul class="dropdown">
+              <li>
+                <a href="../dashboard/patients/insert_patient.html">Insert</a>
+              </li>
+              <li>
+                <a href="../dashboard/patients/delete_patient.html">Delete</a>
+              </li>
+              <li>
+                <a href="../dashboard/patients/edit_patient.html">Edit</a>
+              </li>
+              <li><a href="../dashboard/patients/patients.php">Show</a></li>
+            </ul>
+          </li>
+          <!--<li>
+            <h3>Doctors</h3>
+            <ul class="dropdown">
+              <li><a href="#">Insert</a></li>
+              <li><a href="#">Delete</a></li>
+              <li><a href="#">Edit</a></li>
+              <li><a href="#">Show</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3>Appointments</h3>
+            <ul class="dropdown">
+              <li><a href="#">Insert</a></li>
+              <li><a href="#">Delete</a></li>
+              <li><a href="#">Edit</a></li>
+              <li><a href="#">Show</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3>Invoices</h3>
+            <ul class="dropdown">
+              <li><a href="#">Insert</a></li>
+              <li><a href="#">Delete</a></li>
+              <li><a href="#">Edit</a></li>
+              <li><a href="#">Show</a></li>
+            </ul>
+          </li>-->
+        </ul>
+      </nav>
+    </div>
+    <script>
+      function logOut() {
+        // Perform logout actions here
+        alert("Logged out successfully!");
+
+        // Replace the current URL in the browser's history
+        const newUrl = "/WEB2023/Proiect/index.html";
+        history.replaceState({}, "", newUrl);
+
+        // Redirect to the login page
+        window.location.href = newUrl;
+      }
+    </script>
+  </body>
+</html>
